@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Font Settings</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Mumuni Abdullah">
+    <meta name="keywords" content="Fontsize, color">
+    <meta name="description" content="Font size and color picker">
+    <link rel="stylesheet" href="FontSettings.css">
+
+    <script>
+      const toggleSwitch = document.getElementById("toggle-switch");
+      const toggleStatus = document.getElementById("toggle-status");
+  
+      toggleSwitch.addEventListener("change", () => {
+          if (toggleSwitch.checked) {
+              toggleStatus.textContent = "Switch is ON";
+          } else {
+              toggleStatus.textContent = "Switch is OFF";
+          }
+      });
+  </script>
+  
+  </head>
+
+  <body>
+    <div class="full-background-container">
+      <div class="blue-container">
+          <p class="f-settings">Font Settings</p>
+          <p class="Ab">Ab</p>
+          <p class="Roboto">Roboto Normal</p>
+
+          <div class="toggle-container">
+            <input type="checkbox" id="toggle-switch" class="toggle-input">
+            <label for="toggle-switch" class="toggle-label"></label>
+        </div>
+        
+      </div>
+  
+      <div class="white-container">
+          
+        <p class="s-font">Standard font</p>
+        <!-- <div class="rbto-container">  -->
+         <p class="rbto">Roboto</p>
+
+         <p class="style">Style</p>
+         <p class="normal">Normal</p>
+
+         <p class="color">Color</p>
+    <div class="color-container">
+      <div class="color-circle blue" data-color="#2785FF"></div>
+      <div class="color-circle light-orange" data-color="#FFBB34"></div>
+      <div class="color-circle pure-yellow" data-color="#C8DC00"></div>
+      <div class="color-circle moderate-cyan" data-color="#52CBC3"></div>
+      <div class="color-circle light-grey"><span class="plus-sign">+</span>
+        <input type="color" id="customColorPicker" class="color-picker">
+      </div>
+    </div>
+        
+         <p class="size">Size</p>
+         <form>
+            <input type="range" id="range" name="range" min="0" max="100";>
+         </form>
+         <div class="A-container">
+          <div class="Smaller-A">A</div>
+          <div class="Bigger-A">A</div>
+         </div>
+
+      </div>
+          
+      </div>
+  </div>
+  
+    </div>
+    <script src="FontSettings.js"></script>
+  </body>
+
+</html>

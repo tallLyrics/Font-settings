@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.full-background-container {
+  background-color: #7b7373; /* Change this to any background color you like */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+
+.blue-container{
+  background-color: #2080fd;
+  height: 600px;
+  width: 450px;  
+
+}
+
+
+
+.Ab{
+  font-family: 'Roboto';
+  font-weight: 400; /* Normal weight */
+  font-size: 140px;
+  text-align: center;
+  color: white;
+
+}
+
+.Roboto{
+  text-align: center;
+  position:relative;
+  bottom: 150px;
+  color: white;
+  font-family: 'Roboto';
+}
+
+
+.white-container{
+  background-color: rgba(255, 255, 255, 0.226);
+  height: 600px;
+  width: 450px;
+}
+
+/* Container for the toggle switch */
+.toggle-container {
+  display: inline-block;
+  background-color: rgba(75, 99, 223, 0.705);
+  position: relative;
+  left: 200px;
+  bottom: 65px;
+  width: 70px;
+  height: 33px;
+  border-radius: 30px;
+}
+
+.toggle-container:hover{
+  background-color: rgba(111, 111, 109, 0.833);
+  border: 1.5px solid rgb(255, 255, 255);
+  
+}
+/* Hidden checkbox input */
+.toggle-input {
+  display: none;
+  
+}
+
+/*
+ Toggle switch styling 
+.toggle-label {
+  width: 60px;
+  height: 30px;
+  background-color:rgba(152, 202, 95, 0);
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); 
+}*/
+
+
+/* Circle (toggle knob) */
+.toggle-label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: #d7e3e4;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 6.9px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 1px;
+}
+
+/* Change the color to black on hover
+.toggle-label:hover::before {
+  background-color: #0000009a; 
+}  */
+
+
+/* Checkbox checked state */
+.toggle-input:checked + .toggle-label {
+}
+
+/* Circle position when checked */
+.toggle-input:checked + .toggle-label::before {
+  transform: translateX(30px); 
+}
+
+
+.f-settings{
+  color: white;
+  font-family: Roboto;
+  font-size: 28.67px;
+  font-weight: 500;
+  line-height: 33.6px;
+  position: relative;
+  top: 30px;
+  left: 60px;
+
+}
+
+
+/* This code below shows the color of Standard font and any other css styling*/
+.s-font{     
+  color: #ffffff; 
+  font-size: 17.5px;
+  margin-top: 55px;
+  margin-left: 55px;
+  font-family: 'roboto'; 
+  line-height: 2px;
+  font-weight: 400px;
+  
+}
+
+/*
+.rbto-container{
+  display: inline-block;
+  position: relative;
+}*/
+
+.rbto{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #111010;
+  border-bottom: 1.5px solid #ffffff; /* Line under the text */
+  padding-bottom: 5px; /* Space between text and line */
+  width:300px;
+  margin-left: 55px;
+  font-size: 30px;
+  position: relative;
+  bottom: 10px;
+}
+
+/* This code below is for styling the "style" text/word */
+.style{
+  color: #ffffff; 
+  font-size: 17.5px;
+  margin-top: 55px;
+  margin-left: 55px;
+  font-family: 'roboto';
+  line-height: 2px;
+  font-weight: 400px;
+
+}
+
+/* This code below is for styling the "NORMAL" text/word */
+.normal{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #111010;
+  border-bottom: 1.5px solid #ffffff; /* Line under the text */
+  padding-bottom: 5px; /* Space between text and line */
+  width:300px;
+  margin-left: 55px;
+  font-size: 30px;
+  position: relative;
+  bottom: 10px;
+}
+
+.color{
+  color: #070707; 
+  font-size: 16.5px;
+  margin-top: 55px;
+  margin-left: 55px;
+  font-family: 'roboto';
+}
+
+.color-container {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  left: 50px;
+  align-items: center;
+}
+
+.color-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-sizing: border-box; /* Prevents layout shift */
+  transition: box-shadow 0.2s ease; /* Smooth hover effect */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  border: 1px dotted black;
+  
+}
+
+.blue {
+  background-color: #2785FF;
+}
+
+.light-orange {
+  background-color: #FFBB34;
+}
+
+.pure-yellow {
+  background-color: #C8DC00;
+}
+
+.moderate-cyan {
+  background-color: #52CBC3;
+}
+
+.light-grey {
+  background-color: #E9ECF5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus-sign {
+  font-size: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  color: grey;
+}
+
+/* Hover effect without resizing */
+.color-circle:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds shadow without changing size */
+  cursor: pointer;
+  transform: scale(1.3);
+ /* border: 1px solid black;*/ /* Had to turn it off beacuse it keeps shaking when it hovers with a black border solid*/
+} 
+
+
+.color-circle.active::after {
+  display: block;
+  content: "✔";
+  color: white;
+  font-size: 20px;
+} 
+
+#customColorPicker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+
+
+.size{
+  color: #070707;
+  font-size: 16.5px;
+  margin-left: 55px;
+  font-family: 'roboto';
+  line-height: 75px;
+  font-weight: 400px;
+}
+
+#range{
+  margin-left: 55px;
+  position: relative;
+  bottom: 20px;
+  width: 300px;
+  height: 10px;
+}
+
+/* Style the thumb for Webkit browsers (Chrome, Safari, Edge) */
+#range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default style */
+  appearance: none;
+  width: 60px; /* Increase the width */
+  height: 100px; /* Increase the height */
+  border-radius: 50%; /* Make it circular */
+  background: #f7f7f8; /* Thumb color */
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
+}
+.A-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  bottom: 20px;
+}
+
+.Smaller-A{
+  color:#000000;
+  position: relative;
+  right: 50px;
+  font-size: 12px;
+}
+
+.Bigger-A{
+  color:#000000;
+  position: relative;
+  left: 18px;
+  font-size: 25px;
+}
